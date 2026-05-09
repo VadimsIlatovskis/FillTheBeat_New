@@ -3574,6 +3574,21 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &235236170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235236162}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c809d7889ce2a98438a62806e9df831b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextLookAtCamera
+  textObject: {fileID: 1392432072}
+  vrCamera: {fileID: 253665293}
+  copyCameraRotation: 1
 --- !u!1 &236946451
 GameObject:
   m_ObjectHideFlags: 0
@@ -5713,6 +5728,21 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &339925315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 339925307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c809d7889ce2a98438a62806e9df831b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextLookAtCamera
+  textObject: {fileID: 477065755}
+  vrCamera: {fileID: 253665293}
+  copyCameraRotation: 1
 --- !u!1 &340414083
 GameObject:
   m_ObjectHideFlags: 0
@@ -5978,6 +6008,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8def68ba3177e58489c4ef9c97f4ff8f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1325143645}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 8def68ba3177e58489c4ef9c97f4ff8f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1325143648}
   m_SourcePrefab: {fileID: 100100000, guid: 8def68ba3177e58489c4ef9c97f4ff8f, type: 3}
 --- !u!1 &350236397
 GameObject:
@@ -12776,6 +12809,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f59c72cf0af68b046b4272cfa379c4f7, type: 3}
       insertIndex: -1
       addedObject: {fileID: 975324918}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f59c72cf0af68b046b4272cfa379c4f7, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 975324921}
   m_SourcePrefab: {fileID: 100100000, guid: f59c72cf0af68b046b4272cfa379c4f7, type: 3}
 --- !u!1 &749169455
 GameObject:
@@ -14317,6 +14353,21 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &825819026
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 825819018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c809d7889ce2a98438a62806e9df831b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextLookAtCamera
+  textObject: {fileID: 942406332}
+  vrCamera: {fileID: 253665293}
+  copyCameraRotation: 1
 --- !u!1 &826605427
 GameObject:
   m_ObjectHideFlags: 0
@@ -14975,6 +15026,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ef973379bc259c74a9da900ab390f4d2, type: 3}
       insertIndex: -1
       addedObject: {fileID: 825819023}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: ef973379bc259c74a9da900ab390f4d2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 825819026}
   m_SourcePrefab: {fileID: 100100000, guid: ef973379bc259c74a9da900ab390f4d2, type: 3}
 --- !u!1 &884316460
 GameObject:
@@ -16470,6 +16524,21 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &975324921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975324913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c809d7889ce2a98438a62806e9df831b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextLookAtCamera
+  textObject: {fileID: 740753362}
+  vrCamera: {fileID: 253665293}
+  copyCameraRotation: 1
 --- !u!1 &977809850
 GameObject:
   m_ObjectHideFlags: 0
@@ -21971,6 +22040,21 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &1270608219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270608213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c809d7889ce2a98438a62806e9df831b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextLookAtCamera
+  textObject: {fileID: 1897213882}
+  vrCamera: {fileID: 253665293}
+  copyCameraRotation: 1
 --- !u!1 &1272736714
 GameObject:
   m_ObjectHideFlags: 0
@@ -22961,6 +23045,21 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &1325143648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325143640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c809d7889ce2a98438a62806e9df831b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextLookAtCamera
+  textObject: {fileID: 812650799}
+  vrCamera: {fileID: 253665293}
+  copyCameraRotation: 1
 --- !u!1 &1325909551
 GameObject:
   m_ObjectHideFlags: 0
@@ -30682,6 +30781,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c0919b36baca4bd4681fbad347b7fbc4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1999747342}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: c0919b36baca4bd4681fbad347b7fbc4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1999747345}
   m_SourcePrefab: {fileID: 100100000, guid: c0919b36baca4bd4681fbad347b7fbc4, type: 3}
 --- !u!1 &1788629404
 GameObject:
@@ -31767,6 +31869,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da158603e57294f4886f4814b6ab9deb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 339925312}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da158603e57294f4886f4814b6ab9deb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 339925315}
   m_SourcePrefab: {fileID: 100100000, guid: da158603e57294f4886f4814b6ab9deb, type: 3}
 --- !u!1 &1832932515
 GameObject:
@@ -32190,6 +32295,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9ed3d228c66f5b0449f8b5a6ce9c5ed9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 235236167}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 9ed3d228c66f5b0449f8b5a6ce9c5ed9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 235236170}
   m_SourcePrefab: {fileID: 100100000, guid: 9ed3d228c66f5b0449f8b5a6ce9c5ed9, type: 3}
 --- !u!1 &1866015665
 GameObject:
@@ -32807,16 +32915,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1897213881}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0.00559}
+  m_LocalRotation: {x: 0.025618564, y: -0.025618564, z: 0.70664257, w: 0.70664257}
+  m_LocalPosition: {x: 0, y: 0, z: 0.005360101}
   m_LocalScale: {x: 0.001, y: 0.001, z: 0.001}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1270608217}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 4.153, y: 0, z: 90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.00177, y: -0.00244}
+  m_AnchoredPosition: {x: -0.001769999, y: -0.0024316702}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1897213883
@@ -33619,6 +33727,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5b542cd0fe7e2a14b85284ec9ae8063f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1270608218}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 5b542cd0fe7e2a14b85284ec9ae8063f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1270608219}
   m_SourcePrefab: {fileID: 100100000, guid: 5b542cd0fe7e2a14b85284ec9ae8063f, type: 3}
 --- !u!1 &1957163841
 GameObject:
@@ -34239,6 +34350,21 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 0
   m_CollisionDetection: 2
+--- !u!114 &1999747345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999747337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c809d7889ce2a98438a62806e9df831b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TextLookAtCamera
+  textObject: {fileID: 484095395}
+  vrCamera: {fileID: 253665293}
+  copyCameraRotation: 1
 --- !u!1 &2002781328
 GameObject:
   m_ObjectHideFlags: 0
