@@ -2,10 +2,10 @@ using UnityEngine;
 
 public class NoteSocket : MonoBehaviour
 {
-    [Header("Какую ноту принимает этот сокет")]
-    public NoteObject acceptedNotePrefab;
+    [Header("Какую ноту принимает")]
+    public GameObject acceptedNotePrefab;
 
-    [Header("Точка установки ноты")]
+    [Header("Точка установки")]
     public Transform snapPoint;
 
     private bool occupied = false;
@@ -20,13 +20,13 @@ public class NoteSocket : MonoBehaviour
         if (note == null || note.IsUsed())
             return;
 
-        if (note.notePrefab == acceptedNotePrefab.gameObject)
-        {
-            if (snapPoint == null)
-                snapPoint = transform;
+        // Проверяем правильная ли нота
+        if (note.notePrefab != acceptedNotePrefab)
+            return;
 
-            occupied = true;
-            note.SnapToSocket(snapPoint);
-        }
+        occupied = true;
+
+        // Телепортируем ноту в центр сокета
+        note.SnapToSocket(snapPoint);
     }
 }
