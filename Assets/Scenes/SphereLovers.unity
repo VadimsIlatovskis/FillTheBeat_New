@@ -21624,6 +21624,83 @@ MonoBehaviour:
   _kinematicWhileSelected: 1
   _throwWhenUnselected: 1
   _forceKinematicDisabled: 0
+--- !u!114 &1270608223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270608213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cf00a93483fd1b4ba357bf6f764d6e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Oculus.Interaction::Oculus.Interaction.InteractorUnityEventWrapper
+  _interactorView: {fileID: 0}
+  _whenEnabled:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenDisabled:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenHover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenUnhover:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenSelect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1270608224}
+        m_TargetAssemblyTypeName: NoteGrabFix, Assembly-CSharp
+        m_MethodName: OnGrab
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenUnselect:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1270608224}
+        m_TargetAssemblyTypeName: NoteGrabFix, Assembly-CSharp
+        m_MethodName: OnRelease
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  _whenPreprocessed:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenProcessed:
+    m_PersistentCalls:
+      m_Calls: []
+  _whenPostprocessed:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &1270608224
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270608213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a081e14b29781454a8b81b83b9afb9a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NoteGrabFix
+  enableColliderDelay: 0.15
 --- !u!1 &1272736714
 GameObject:
   m_ObjectHideFlags: 0
@@ -36204,6 +36281,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8793138348165642935, guid: 140ceef26c472db449be567a7a28445d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1270608221}
+    - targetCorrespondingSourceObject: {fileID: 8793138348165642935, guid: 140ceef26c472db449be567a7a28445d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1270608224}
+    - targetCorrespondingSourceObject: {fileID: 8793138348165642935, guid: 140ceef26c472db449be567a7a28445d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1270608223}
     - targetCorrespondingSourceObject: {fileID: 277537422855121151, guid: 140ceef26c472db449be567a7a28445d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 0}
