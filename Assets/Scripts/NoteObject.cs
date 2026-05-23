@@ -27,6 +27,7 @@ public class NoteObject : MonoBehaviour
         alreadyUsed = true;
 
         transform.SetParent(socketPoint);
+
         transform.position = socketPoint.position;
         transform.rotation = socketPoint.rotation;
 
@@ -34,6 +35,7 @@ public class NoteObject : MonoBehaviour
         {
             rb.linearVelocity = Vector3.zero;
             rb.angularVelocity = Vector3.zero;
+
             rb.useGravity = false;
             rb.isKinematic = true;
         }
