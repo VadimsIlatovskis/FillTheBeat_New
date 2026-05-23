@@ -12563,7 +12563,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: ace013c49078ee24090da07d299b8b44, type: 2}
     - target: {fileID: 919132149155446097, guid: 4c104d1af9e20704dacc6e3b7b665ba8, type: 3}
       propertyPath: m_Name
-      value: 4_6050617916489998148 (1)
+      value: MusicReel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14099,7 +14099,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 268bd1fc7be1043458cb6821f0f98892, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteMissZone
-  destroyOnlyOnTriggerExit: 1
+  teleportOnlyOnTriggerExit: 1
 --- !u!1 &804475320
 GameObject:
   m_ObjectHideFlags: 0
@@ -19544,7 +19544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 268bd1fc7be1043458cb6821f0f98892, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteMissZone
-  destroyOnlyOnTriggerExit: 1
+  teleportOnlyOnTriggerExit: 1
 --- !u!65 &1111073982
 BoxCollider:
   m_ObjectHideFlags: 0
