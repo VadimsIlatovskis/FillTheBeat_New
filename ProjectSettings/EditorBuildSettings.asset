@@ -5,12 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: e850750251cb4d545955ccbf5eb8c2b2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/SphereLovers.unity
+    guid: 38f7c2e4f84a59546b874cd3ed78cac8
+  - enabled: 0
+    path: Assets/Scenes/GameUI.unity
+    guid: a643a6909588c294ea0f1364ce186c91
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 1690e64a263a9b6428941ddd42e14f8f, type: 2}
