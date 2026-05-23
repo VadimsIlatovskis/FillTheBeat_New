@@ -21700,7 +21700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a081e14b29781454a8b81b83b9afb9a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoteGrabFix
-  enableColliderDelay: 0.15
+  enableColliderDelay: 0.1
 --- !u!1 &1272736714
 GameObject:
   m_ObjectHideFlags: 0
