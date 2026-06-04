@@ -5,6 +5,7 @@ using System.Collections.Generic;
 public class SongGapManager : MonoBehaviour
 {
     public AudioSource audioSource;
+    public AudioClip endingClip;
     public List<LyricGap> gaps;
 
     private int currentIndex = 0;
@@ -44,6 +45,15 @@ public class SongGapManager : MonoBehaviour
         if (thrownWord == gaps[currentIndex].correctWord)
         {
             currentIndex++;
+
+            if (currentIndex >= gaps.Count)
+            {
+                audioSource.clip = endingClip;
+                audioSource.Play();
+                Debug.Log("Atskaņo dziesmas beigas!");
+                return;
+            }
+
             PlayCurrentClip();
         }
         else
