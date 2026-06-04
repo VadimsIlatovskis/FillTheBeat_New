@@ -689,6 +689,11 @@ Transform:
   - {fileID: 1788629405}
   m_Father: {fileID: 178271741}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &47575588 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5137575857945794201, guid: a6f63ac1ed6a2ce428372ddda3fb1307, type: 3}
+  m_PrefabInstance: {fileID: 1615803192}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &55833910
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,6 +1088,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 572288117}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &75712726 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5137575857945794201, guid: a6f63ac1ed6a2ce428372ddda3fb1307, type: 3}
+  m_PrefabInstance: {fileID: 4494259398166266060}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &76306113
 GameObject:
   m_ObjectHideFlags: 0
@@ -5720,6 +5730,11 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &333482407 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5137575857945794201, guid: a6f63ac1ed6a2ce428372ddda3fb1307, type: 3}
+  m_PrefabInstance: {fileID: 1816370478}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &335739302
 GameObject:
   m_ObjectHideFlags: 0
@@ -14725,7 +14740,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5137575857945794201, guid: a6f63ac1ed6a2ce428372ddda3fb1307, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1943758818}
   m_SourcePrefab: {fileID: 100100000, guid: a6f63ac1ed6a2ce428372ddda3fb1307, type: 3}
 --- !u!4 &874766384 stripped
 Transform:
@@ -15008,6 +15026,19 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2010201768963389259, guid: a6f63ac1ed6a2ce428372ddda3fb1307, type: 3}
   m_PrefabInstance: {fileID: 1615803192}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &915420419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47575588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdb61d955d6bd67499e187977920bfc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NoteWord
+  word: 
 --- !u!1 &916404968
 GameObject:
   m_ObjectHideFlags: 0
@@ -17511,6 +17542,37 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1030660106}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1031408762
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1031408763}
+  m_Layer: 0
+  m_Name: SongManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1031408763
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031408762}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1032737606
 GameObject:
   m_ObjectHideFlags: 0
@@ -27734,6 +27796,32 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2010201768963389259, guid: a6f63ac1ed6a2ce428372ddda3fb1307, type: 3}
   m_PrefabInstance: {fileID: 4494259398166266060}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1541455668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75712726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdb61d955d6bd67499e187977920bfc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NoteWord
+  word: Rietosas
+--- !u!114 &1541455669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 75712726}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 778b0575cc44e834d995b960a132928a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  songManager: {fileID: 0}
 --- !u!1 &1549229092
 GameObject:
   m_ObjectHideFlags: 0
@@ -28887,7 +28975,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5137575857945794201, guid: a6f63ac1ed6a2ce428372ddda3fb1307, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 915420419}
   m_SourcePrefab: {fileID: 100100000, guid: a6f63ac1ed6a2ce428372ddda3fb1307, type: 3}
 --- !u!1 &1616037563
 GameObject:
@@ -30945,16 +31036,20 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e62aba0e237159d43a9acad3c700a1d1, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.49432743
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e62aba0e237159d43a9acad3c700a1d1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.19017641
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e62aba0e237159d43a9acad3c700a1d1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.00000021201757
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e62aba0e237159d43a9acad3c700a1d1, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.264
+      value: 0.2325
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e62aba0e237159d43a9acad3c700a1d1, type: 3}
       propertyPath: m_LocalRotation.w
@@ -31664,13 +31759,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5137575857945794201, guid: a6f63ac1ed6a2ce428372ddda3fb1307, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1816370483}
   m_SourcePrefab: {fileID: 100100000, guid: a6f63ac1ed6a2ce428372ddda3fb1307, type: 3}
 --- !u!4 &1816370479 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2010201768963389259, guid: a6f63ac1ed6a2ce428372ddda3fb1307, type: 3}
   m_PrefabInstance: {fileID: 1816370478}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1816370483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333482407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdb61d955d6bd67499e187977920bfc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NoteWord
+  word: 
 --- !u!4 &1816897980 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 813447376, guid: 0a7d2469f24041c4284c66706f84c45e, type: 3}
@@ -33300,6 +33411,24 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1918951160}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1943758814 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5137575857945794201, guid: a6f63ac1ed6a2ce428372ddda3fb1307, type: 3}
+  m_PrefabInstance: {fileID: 874766383}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1943758818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1943758814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdb61d955d6bd67499e187977920bfc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NoteWord
+  word: 
 --- !u!1 &1946225777
 GameObject:
   m_ObjectHideFlags: 0
@@ -37068,7 +37197,13 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5137575857945794201, guid: a6f63ac1ed6a2ce428372ddda3fb1307, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1541455669}
+    - targetCorrespondingSourceObject: {fileID: 5137575857945794201, guid: a6f63ac1ed6a2ce428372ddda3fb1307, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1541455668}
   m_SourcePrefab: {fileID: 100100000, guid: a6f63ac1ed6a2ce428372ddda3fb1307, type: 3}
 --- !u!1001 &5003106472269353059
 PrefabInstance:
@@ -37395,3 +37530,4 @@ SceneRoots:
   - {fileID: 723745597}
   - {fileID: 1111073985}
   - {fileID: 1479447256}
+  - {fileID: 1031408763}
