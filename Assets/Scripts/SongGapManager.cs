@@ -4,8 +4,11 @@ using System.Collections.Generic;
 
 public class SongGapManager : MonoBehaviour
 {
+    [Header("Audio")]
     public AudioSource audioSource;
     public AudioClip endingClip;
+
+    [Header("Song Gaps")]
     public List<LyricGap> gaps;
 
     private int currentIndex = 0;
@@ -13,6 +16,7 @@ public class SongGapManager : MonoBehaviour
 
     void Start()
     {
+        TurnOffAllEffects();
         PlayCurrentClip();
     }
 
@@ -20,11 +24,13 @@ public class SongGapManager : MonoBehaviour
     {
         if (currentIndex >= gaps.Count)
         {
-            Debug.Log("Dziesma pabeigta!");
+            PlayEndingClip();
             return;
         }
 
         waitingForWord = false;
+        TurnOffAllEffects();
+
         audioSource.clip = gaps[currentIndex].beforeClip;
         audioSource.Play();
 
@@ -34,23 +40,27 @@ public class SongGapManager : MonoBehaviour
     IEnumerator WaitUntilClipEnds()
     {
         yield return new WaitWhile(() => audioSource.isPlaying);
+
         waitingForWord = true;
+        ShowCurrentEffect();
+
         Debug.Log("Tagad jāiemet: " + gaps[currentIndex].correctWord);
     }
 
     public void SubmitWord(string thrownWord)
     {
-        if (!waitingForWord) return;
+        if (!waitingForWord)
+            return;
 
         if (thrownWord == gaps[currentIndex].correctWord)
         {
+            HideCurrentEffect();
+
             currentIndex++;
 
             if (currentIndex >= gaps.Count)
             {
-                audioSource.clip = endingClip;
-                audioSource.Play();
-                Debug.Log("Atskaņo dziesmas beigas!");
+                PlayEndingClip();
                 return;
             }
 
@@ -61,6 +71,50 @@ public class SongGapManager : MonoBehaviour
             Debug.Log("Nepareizā nots!");
         }
     }
+
+    void PlayEndingClip()
+    {
+        waitingForWord = false;
+        TurnOffAllEffects();
+
+        if (endingClip != null)
+        {
+            audioSource.clip = endingClip;
+            audioSource.Play();
+            Debug.Log("Dziesmas beigas!");
+        }
+        else
+        {
+            Debug.Log("EndingClip nav ielikts!");
+        }
+    }
+
+    void ShowCurrentEffect()
+    {
+        if (currentIndex < gaps.Count && gaps[currentIndex].dropEffect != null)
+        {
+            gaps[currentIndex].dropEffect.SetActive(true);
+        }
+    }
+
+    void HideCurrentEffect()
+    {
+        if (currentIndex < gaps.Count && gaps[currentIndex].dropEffect != null)
+        {
+            gaps[currentIndex].dropEffect.SetActive(false);
+        }
+    }
+
+    void TurnOffAllEffects()
+    {
+        foreach (LyricGap gap in gaps)
+        {
+            if (gap.dropEffect != null)
+            {
+                gap.dropEffect.SetActive(false);
+            }
+        }
+    }
 }
 
 [System.Serializable]
@@ -68,4 +122,5 @@ public class LyricGap
 {
     public AudioClip beforeClip;
     public string correctWord;
+    public GameObject dropEffect;
 }

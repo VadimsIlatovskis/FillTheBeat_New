@@ -33,7 +33,7 @@ public class NoteMissZone : MonoBehaviour
 }*/
 
 
-using UnityEngine;
+/* using UnityEngine;
 
 public class NoteMissZone : MonoBehaviour
 {
@@ -78,5 +78,51 @@ public class NoteMissZone : MonoBehaviour
         // Телепортируем обратно
         note.transform.position = note.respawnPoint.position;
         note.transform.rotation = note.respawnPoint.rotation;
+    }
+}*/
+using UnityEngine;
+
+public class NoteMissZone : MonoBehaviour
+{
+    [Header("Respawn Settings")]
+    public float respawnDelay = 0.2f;
+
+    private void OnTriggerEnter(Collider other)
+    {
+        NoteObject note = other.GetComponentInParent<NoteObject>();
+
+        if (note == null)
+            return;
+
+        if (note.IsUsed())
+            return;
+
+        if (note.respawnPoint == null)
+            return;
+
+        StartCoroutine(RespawnNote(note));
+    }
+
+    private System.Collections.IEnumerator RespawnNote(NoteObject note)
+    {
+        yield return new WaitForSeconds(respawnDelay);
+
+        Rigidbody rb = note.GetComponent<Rigidbody>();
+
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+
+            rb.Sleep();
+        }
+
+        note.transform.position = note.respawnPoint.position;
+        note.transform.rotation = note.respawnPoint.rotation;
+
+        if (rb != null)
+        {
+            rb.WakeUp();
+        }
     }
 }
