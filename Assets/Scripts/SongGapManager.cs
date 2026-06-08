@@ -13,6 +13,10 @@ public class SongGapManager : MonoBehaviour
 
     [Header("UI")]
     public GameObject startMenu;
+    public GameObject menuButtons;
+    public GameObject leaderBoard;
+    public GameObject howToPlay;
+    public GameObject exitMenu;
 
     [Header("End Effect")]
     public GameObject endEffect;
@@ -30,6 +34,18 @@ public class SongGapManager : MonoBehaviour
 
         if (startMenu != null)
             startMenu.SetActive(true);
+
+        if (menuButtons != null)
+            menuButtons.SetActive(true);
+
+        if (leaderBoard != null)
+            leaderBoard.SetActive(false);
+
+        if (howToPlay != null)
+            howToPlay.SetActive(false);
+
+        if (exitMenu != null)
+            exitMenu.SetActive(false);
     }
 
     public void StartGame()
@@ -39,10 +55,105 @@ public class SongGapManager : MonoBehaviour
 
         gameStarted = true;
 
+        HideAllMenus();
+
+        PlayCurrentClip();
+    }
+
+    public void ShowLeaderBoard()
+    {
+        if (startMenu != null)
+            startMenu.SetActive(true);
+
+        if (menuButtons != null)
+            menuButtons.SetActive(false);
+
+        if (leaderBoard != null)
+            leaderBoard.SetActive(true);
+
+        if (howToPlay != null)
+            howToPlay.SetActive(false);
+
+        if (exitMenu != null)
+            exitMenu.SetActive(false);
+    }
+
+    public void ShowHowToPlay()
+    {
+        if (startMenu != null)
+            startMenu.SetActive(true);
+
+        if (menuButtons != null)
+            menuButtons.SetActive(false);
+
+        if (howToPlay != null)
+            howToPlay.SetActive(true);
+
+        if (leaderBoard != null)
+            leaderBoard.SetActive(false);
+
+        if (exitMenu != null)
+            exitMenu.SetActive(false);
+    }
+
+    public void ShowExitMenu()
+    {
+        if (startMenu != null)
+            startMenu.SetActive(true);
+
+        if (menuButtons != null)
+            menuButtons.SetActive(false);
+
+        if (exitMenu != null)
+            exitMenu.SetActive(true);
+
+        if (leaderBoard != null)
+            leaderBoard.SetActive(false);
+
+        if (howToPlay != null)
+            howToPlay.SetActive(false);
+    }
+
+    public void BackToMainMenu()
+    {
+        if (startMenu != null)
+            startMenu.SetActive(true);
+
+        if (menuButtons != null)
+            menuButtons.SetActive(true);
+
+        if (leaderBoard != null)
+            leaderBoard.SetActive(false);
+
+        if (howToPlay != null)
+            howToPlay.SetActive(false);
+
+        if (exitMenu != null)
+            exitMenu.SetActive(false);
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+        Debug.Log("Exit game");
+    }
+
+    void HideAllMenus()
+    {
         if (startMenu != null)
             startMenu.SetActive(false);
 
-        PlayCurrentClip();
+        if (menuButtons != null)
+            menuButtons.SetActive(false);
+
+        if (leaderBoard != null)
+            leaderBoard.SetActive(false);
+
+        if (howToPlay != null)
+            howToPlay.SetActive(false);
+
+        if (exitMenu != null)
+            exitMenu.SetActive(false);
     }
 
     void PlayCurrentClip()
