@@ -18,6 +18,10 @@ public class SongGapManager : MonoBehaviour
     public GameObject howToPlay;
     public GameObject exitMenu;
 
+    [Header("Leaderboard")]
+    public LeaderboardManager leaderboardManager;
+    public GameObject endScoreMenu;
+
     [Header("End Effect")]
     public GameObject endEffect;
 
@@ -25,12 +29,18 @@ public class SongGapManager : MonoBehaviour
     private bool waitingForWord = false;
     private bool gameStarted = false;
 
+    private float gameStartTime;
+    private float finalTime;
+
     void Start()
     {
         TurnOffAllEffects();
 
         if (endEffect != null)
             endEffect.SetActive(false);
+
+        if (endScoreMenu != null)
+            endScoreMenu.SetActive(false);
 
         if (startMenu != null)
             startMenu.SetActive(true);
@@ -54,6 +64,7 @@ public class SongGapManager : MonoBehaviour
             return;
 
         gameStarted = true;
+        gameStartTime = Time.time;
 
         HideAllMenus();
 
@@ -154,6 +165,9 @@ public class SongGapManager : MonoBehaviour
 
         if (exitMenu != null)
             exitMenu.SetActive(false);
+
+        if (endScoreMenu != null)
+            endScoreMenu.SetActive(false);
     }
 
     void PlayCurrentClip()
@@ -216,6 +230,14 @@ public class SongGapManager : MonoBehaviour
         waitingForWord = false;
         TurnOffAllEffects();
 
+        finalTime = Time.time - gameStartTime;
+
+        if (leaderboardManager != null)
+            leaderboardManager.SetCurrentTime(finalTime);
+
+        if (endScoreMenu != null)
+            endScoreMenu.SetActive(true);
+
         if (endingClip != null)
         {
             audioSource.clip = endingClip;
@@ -224,11 +246,11 @@ public class SongGapManager : MonoBehaviour
             if (endEffect != null)
                 endEffect.SetActive(true);
 
-            Debug.Log("Dziesmas beigas!");
+            Debug.Log("Dziesmas beigas! Laiks: " + finalTime);
         }
         else
         {
-            Debug.Log("EndingClip nav ielikts!");
+            Debug.Log("EndingClip nav ielikts! Laiks: " + finalTime);
         }
     }
 
