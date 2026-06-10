@@ -24653,7 +24653,7 @@ ParticleSystem:
   ShapeModule:
     serializedVersion: 6
     enabled: 1
-    type: 10
+    type: 0
     angle: 25
     length: 5
     boxThickness: {x: 0, y: 0, z: 0}
@@ -79246,7 +79246,7 @@ Transform:
   m_GameObject: {fileID: 1476358472}
   serializedVersion: 2
   m_LocalRotation: {x: -0.9996817, y: -0, z: -0, w: 0.025229653}
-  m_LocalPosition: {x: -0.161, y: 0.248, z: 0.392}
+  m_LocalPosition: {x: -0.161, y: 0.293, z: 0.394}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -83192,7 +83192,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -25, y: 20}
+  m_AnchoredPosition: {x: 5.6, y: 20}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1606228012
@@ -83281,7 +83281,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -28.525688, y: 0, z: -24.504791, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -98333,7 +98333,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -25, y: 0}
+  m_AnchoredPosition: {x: 5.600004, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2030325688
@@ -98424,7 +98424,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -29.746803, y: 0, z: -21.643242, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -99966,7 +99966,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -25, y: -20}
+  m_AnchoredPosition: {x: 5.600004, y: -20}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2079693324
@@ -100057,7 +100057,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: -30.967476, y: 0, z: -25.602531, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -102149,6 +102149,18 @@ PrefabInstance:
       propertyPath: vrCamera
       value: 
       objectReference: {fileID: 253665293}
+    - target: {fileID: 3373462826184772341, guid: 140ceef26c472db449be567a7a28445d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.00536
+      objectReference: {fileID: 0}
+    - target: {fileID: 3373462826184772341, guid: 140ceef26c472db449be567a7a28445d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.00434
+      objectReference: {fileID: 0}
+    - target: {fileID: 3373462826184772341, guid: 140ceef26c472db449be567a7a28445d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.00243
+      objectReference: {fileID: 0}
     - target: {fileID: 6283364642403139146, guid: 140ceef26c472db449be567a7a28445d, type: 3}
       propertyPath: respawnPoint
       value: 
@@ -102382,6 +102394,18 @@ PrefabInstance:
       propertyPath: m_text
       value: Atveries
       objectReference: {fileID: 0}
+    - target: {fileID: 2141253201391157316, guid: 498e0b000ca5aba4f9d7899625a49ae2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.00408
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141253201391157316, guid: 498e0b000ca5aba4f9d7899625a49ae2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.09282944
+      objectReference: {fileID: 0}
+    - target: {fileID: 2141253201391157316, guid: 498e0b000ca5aba4f9d7899625a49ae2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0035
+      objectReference: {fileID: 0}
     - target: {fileID: 6169496034289422742, guid: 498e0b000ca5aba4f9d7899625a49ae2, type: 3}
       propertyPath: m_Size.z
       value: 0.0010667373
@@ -102492,11 +102516,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2010201768963389259, guid: a6f63ac1ed6a2ce428372ddda3fb1307, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.0011533569
+      value: -0.00174
       objectReference: {fileID: 0}
     - target: {fileID: 2010201768963389259, guid: a6f63ac1ed6a2ce428372ddda3fb1307, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0016947639
+      value: 0.00069
       objectReference: {fileID: 0}
     - target: {fileID: 2010201768963389259, guid: a6f63ac1ed6a2ce428372ddda3fb1307, type: 3}
       propertyPath: m_LocalPosition.z
