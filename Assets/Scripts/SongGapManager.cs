@@ -17,6 +17,7 @@ public class SongGapManager : MonoBehaviour
     public GameObject leaderBoard;
     public GameObject howToPlay;
     public GameObject exitMenu;
+    public GameObject tryAgainButton;
 
     [Header("Leaderboard")]
     public LeaderboardManager leaderboardManager;
@@ -28,6 +29,8 @@ public class SongGapManager : MonoBehaviour
     private int currentIndex = 0;
     private bool waitingForWord = false;
     private bool gameStarted = false;
+    private bool gameCompleted = false;
+    public GameObject backToMenuButton;
 
     private float gameStartTime;
     private float finalTime;
@@ -35,12 +38,20 @@ public class SongGapManager : MonoBehaviour
     void Start()
     {
         TurnOffAllEffects();
+        if (backToMenuButton != null)
+            backToMenuButton.SetActive(true);
+
+        if (tryAgainButton != null)
+            tryAgainButton.SetActive(false);
 
         if (endEffect != null)
             endEffect.SetActive(false);
 
         if (endScoreMenu != null)
             endScoreMenu.SetActive(false);
+
+        if (tryAgainButton != null)
+            tryAgainButton.SetActive(false);
 
         if (startMenu != null)
             startMenu.SetActive(true);
@@ -64,6 +75,7 @@ public class SongGapManager : MonoBehaviour
             return;
 
         gameStarted = true;
+        gameCompleted = false;
         gameStartTime = Time.time;
 
         HideAllMenus();
@@ -73,6 +85,12 @@ public class SongGapManager : MonoBehaviour
 
     public void ShowLeaderBoard()
     {
+        if (backToMenuButton != null)
+            backToMenuButton.SetActive(true);
+
+        if (tryAgainButton != null)
+            tryAgainButton.SetActive(false);
+        
         if (startMenu != null)
             startMenu.SetActive(true);
 
@@ -87,6 +105,12 @@ public class SongGapManager : MonoBehaviour
 
         if (exitMenu != null)
             exitMenu.SetActive(false);
+
+        if (endScoreMenu != null)
+            endScoreMenu.SetActive(false);
+
+        if (tryAgainButton != null)
+            tryAgainButton.SetActive(gameCompleted);
     }
 
     public void ShowHowToPlay()
@@ -105,6 +129,9 @@ public class SongGapManager : MonoBehaviour
 
         if (exitMenu != null)
             exitMenu.SetActive(false);
+
+        if (tryAgainButton != null)
+            tryAgainButton.SetActive(false);
     }
 
     public void ShowExitMenu()
@@ -123,10 +150,28 @@ public class SongGapManager : MonoBehaviour
 
         if (howToPlay != null)
             howToPlay.SetActive(false);
+
+        if (tryAgainButton != null)
+            tryAgainButton.SetActive(false);
     }
 
     public void BackToMainMenu()
     {
+        gameStarted = false;
+        currentIndex = 0;
+        waitingForWord = false;
+
+        if (audioSource != null)
+            audioSource.Stop();
+
+        TurnOffAllEffects();
+
+        if (endEffect != null)
+            endEffect.SetActive(false);
+
+        if (endScoreMenu != null)
+            endScoreMenu.SetActive(false);
+
         if (startMenu != null)
             startMenu.SetActive(true);
 
@@ -141,6 +186,9 @@ public class SongGapManager : MonoBehaviour
 
         if (exitMenu != null)
             exitMenu.SetActive(false);
+
+        if (tryAgainButton != null)
+            tryAgainButton.SetActive(false);
     }
 
     public void ExitGame()
@@ -168,6 +216,9 @@ public class SongGapManager : MonoBehaviour
 
         if (endScoreMenu != null)
             endScoreMenu.SetActive(false);
+
+        if (tryAgainButton != null)
+            tryAgainButton.SetActive(false);
     }
 
     void PlayCurrentClip()
@@ -228,6 +279,13 @@ public class SongGapManager : MonoBehaviour
     void PlayEndingClip()
     {
         waitingForWord = false;
+        gameCompleted = true;
+        if (backToMenuButton != null)
+            backToMenuButton.SetActive(false);
+
+        if (tryAgainButton != null)
+            tryAgainButton.SetActive(true);
+
         TurnOffAllEffects();
 
         finalTime = Time.time - gameStartTime;
@@ -237,6 +295,9 @@ public class SongGapManager : MonoBehaviour
 
         if (endScoreMenu != null)
             endScoreMenu.SetActive(true);
+
+        if (tryAgainButton != null)
+            tryAgainButton.SetActive(true);
 
         if (endingClip != null)
         {
